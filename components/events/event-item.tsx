@@ -7,7 +7,7 @@ import ArrowRightIcon from '../icons/arrow-right-icon';
 
 function EventItem (items) {
 
-    const {title, image, date, location, id} = items;
+    const {title, image, date, location, id} : {title: string, image: string, date: string | Date, location: string, id:number} = items;
 
     const PrettyDate = new Date(date).toLocaleDateString('en-US', {
         day: "numeric",

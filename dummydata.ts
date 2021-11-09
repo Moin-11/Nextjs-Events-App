@@ -65,4 +65,10 @@ return filteredEvents;
 
 }
 
+export function getEventById(id) {
+  return DummyEvents.find((event) => event.id === id);
+}
+
+
+
 export default DummyEvents;

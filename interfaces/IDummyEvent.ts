@@ -1,12 +1,13 @@
 interface DummyEvent {
 
-    id: string,
-    title: string,
-    description: string,
-    location: string,
-    date: string | Date,
-    image: string,
-    isFeatured: boolean,
+    id?: string,
+    title?: string,
+    description?: string,
+    location?: string,
+    date?: string | Date,
+    image?: string,
+    isFeatured?: boolean,
+    imageAlt ?: string
     
     }
 

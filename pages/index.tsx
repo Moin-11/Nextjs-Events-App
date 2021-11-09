@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import EventList from '../components/event-list';
+import EventList from '../components/events/event-list';
 import {getFeaturedEvents} from "../dummydata";
 import IDummyEvent from "../interfaces/IDummyEvent"
 

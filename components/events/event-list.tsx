@@ -1,4 +1,4 @@
-import IDummyEvent from "../interfaces/IDummyEvent";
+import IDummyEvent from "../../interfaces/IDummyEvent";
 import EventItem from "./event-item";
 import styles from './event-list.module.css'
 

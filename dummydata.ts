@@ -35,13 +35,13 @@ const DummyEvents : IDummyEvent[] = [
 
 ];
 
-export const GetAllEvents  = () : IDummyEvent[] => {
+export const getAllEvents  = () : IDummyEvent[] => {
 
 return DummyEvents;
 
 }
 
-export const GetFeaturedEvents = () : IDummyEvent[] => {
+export const getFeaturedEvents = () : IDummyEvent[] => {
 
 return DummyEvents.filter((event: IDummyEvent) => event.isFeatured);
 

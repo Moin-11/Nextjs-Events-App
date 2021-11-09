@@ -1,12 +1,18 @@
-import { Fragment } from 'react';
+import { Fragment, ReactChild, ReactChildren } from 'react';
 
 import MainHeader from './main-header';
 
-function Layout(props) : JSX.Element {
+interface Children { 
+children: ReactChildren | ReactChild;
+
+
+}
+
+function Layout({children} : Children) : JSX.Element {
   return (
     <Fragment>
       <MainHeader />
-      <main>{props.children}</main>
+      <main>{children}</main>
     </Fragment>
   );
 }

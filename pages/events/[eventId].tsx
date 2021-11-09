@@ -5,6 +5,7 @@ import EventSummary from "../../components/event-detail/event-summary"
 import EventContent from "../../components/event-detail/event-content"
 import EventLogistics from "../../components/event-detail/event-logistics"
 import Event from "../../interfaces/Event"
+import ErrorAlert from '../../components/error-alert/error-alert';
 
 
 function EventDetails() : React.ReactNode {
@@ -15,7 +16,16 @@ const eventId = router.query.eventId;
 const event : Event = getEventById(eventId);
 
 
-    return (
+return (!event) ? 
+ (
+    <ErrorAlert>
+      <p>No event found!</p>
+    </ErrorAlert>
+  )
+  
+  :
+
+  (
     <Fragment>
 <EventSummary title={event.title} />
       <EventLogistics

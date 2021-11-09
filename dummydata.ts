@@ -1,6 +1,6 @@
-import IDummyEvent from "./interfaces/Event";
+import Event from "./interfaces/Event";
 
-const DummyEvents : IDummyEvent[] = [
+const DummyEvents : Event[] = [
 
     {
         id: 'e1',
@@ -35,23 +35,25 @@ const DummyEvents : IDummyEvent[] = [
 
 ];
 
-export const getAllEvents  = () : IDummyEvent[] => {
+export const getAllEvents  = () : Event[] => {
 
-return DummyEvents;
+  console.log("I ran");
+
+  return DummyEvents;
 
 }
 
-export const getFeaturedEvents = () : IDummyEvent[] => {
+export const getFeaturedEvents = () : Event[] => {
 
-return DummyEvents.filter((event: IDummyEvent) => event.isFeatured);
+return DummyEvents.filter((event: Event) => event.isFeatured);
 
 }
     
-export const getFilteredEvents = (datefilter : any) : IDummyEvent[] => {
+export const getFilteredEvents = (datefilter : any) : Event[] => {
  
     const {year, month} = datefilter;
 
-let filteredEvents: IDummyEvent[] = DummyEvents.filter((event: IDummyEvent) => {
+let filteredEvents: Event[] = DummyEvents.filter((event: Event) => {
 
 const eventDate = new Date(event.date);
 return eventDate.getFullYear() === year && eventDate.getMonth() - 1;

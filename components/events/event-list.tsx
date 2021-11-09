@@ -1,9 +1,9 @@
-import IDummyEvent from "../../interfaces/IDummyEvent";
+import Event from "../../interfaces/Event";
 import EventItem from "./event-item";
 import styles from './event-list.module.css'
 
 
-function EventList (props) {
+function EventList (props) : JSX.Element {
 
     const {items} = props;
 

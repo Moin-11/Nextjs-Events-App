@@ -1,11 +1,11 @@
-import IDummyEvent from "../../interfaces/IDummyEvent";
+import IDummyEvent from "../../interfaces/Event";
 import styles from './event-item.module.css'
 import Button from "../button/button";
 import DateIcon from '../icons/date-icon';
 import AddressIcon from '../icons/address-icon';
 import ArrowRightIcon from '../icons/arrow-right-icon';
 
-function EventItem (items) {
+function EventItem (items) : JSX.Element {
 
     const {title, image, date, location, id} : {title: string, image: string, date: string | Date, location: string, id:number} = items;
 

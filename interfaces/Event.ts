@@ -1,4 +1,4 @@
-interface DummyEvent {
+interface Event {
 
     id?: string,
     title?: string,
@@ -11,4 +11,4 @@ interface DummyEvent {
     
     }
 
-export default DummyEvent
+export default Event

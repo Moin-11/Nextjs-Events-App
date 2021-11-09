@@ -1,4 +1,4 @@
-import IDummyEvent from "./interfaces/IDummyEvent";
+import IDummyEvent from "./interfaces/Event";
 
 const DummyEvents : IDummyEvent[] = [
 

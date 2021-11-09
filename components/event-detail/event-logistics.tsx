@@ -2,12 +2,12 @@ import AddressIcon from "../icons/address-icon";
 import DateIcon from "../icons/date-icon";
 import LogisticsItem from "./logistics-item";
 import classes from "./event-logistics.module.css";
-import IDummyEvent from "../../interfaces/IDummyEvent";
+import Event from "../../interfaces/Event";
 
 
 
 
-function EventLogistics(props) {
+function EventLogistics(props): JSX.Element {
   
   const {date, image, imageAlt, address} = props;
   

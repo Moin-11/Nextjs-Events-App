@@ -3,7 +3,7 @@ import classes from './button.module.css';
 
 
 
-function Button(props) {
+function Button(props) : JSX.Element {
     if (props.link) {
       return (
         <Link href={props.link}>

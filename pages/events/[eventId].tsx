@@ -4,7 +4,7 @@ import { getEventById } from '../../dummydata';
 import EventSummary from "../../components/event-detail/event-summary"
 import EventContent from "../../components/event-detail/event-content"
 import EventLogistics from "../../components/event-detail/event-logistics"
-import IDummyEvent from "../../interfaces/IDummyEvent"
+import Event from "../../interfaces/Event"
 
 
 function EventDetails() : React.ReactNode {
@@ -12,7 +12,7 @@ const router = useRouter();
 
 const eventId = router.query.eventId;
 
-const event = getEventById(eventId);
+const event : Event = getEventById(eventId);
 
 
     return (
